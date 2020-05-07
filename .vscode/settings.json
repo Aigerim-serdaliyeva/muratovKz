@@ -1,0 +1,15 @@
+{
+    "editor.formatOnSave": false,
+    "eslint.alwaysShowStatus": true,
+    "eslint.packageManager": "npm",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],    
+    "css.validate": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.enable": true
+}

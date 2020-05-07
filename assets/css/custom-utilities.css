@@ -1,0 +1,233 @@
+.bg-white-57 {
+    background: rgba(255, 255, 255, 0.57);
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.absolute-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bg-center {
+  background-position: center center;
+}
+
+.object-fit-polyfill {
+    object-fit: cover;
+    object-position: center;
+    font-family: 'object-fit: cover; object-position: center;';
+}
+
+.vue-notification {
+    font-size: 16px !important;
+}
+
+.container-custom {
+    max-width: 100%;
+}
+
+.menu-mobile__bg {
+    background: linear-gradient(180deg, #eaeaea 0%, #d4d4d4 100%);
+}
+
+.transition-translatey {
+    transition: 0.3s transform;
+    transform: translateY(0);
+}
+
+.translate-mobile-menu {
+    transform: translateY(-100%);
+}
+
+.z-n-1 {
+    z-index: -1
+}
+
+.section-title__back {
+  background-image: url('../../assets/img/section-title-back.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 576px) {
+  .section-title__back {
+      background-image: url('../../assets/img/title-mob-back.jpg');
+      background-size: cover;
+  }
+}
+
+#menu-mobile-trigger {
+    position: absolute;
+    top: 800px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+
+}
+
+@keyframes trambling-animation {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30% {
+    transform: rotate(-10deg);
+  }
+  20%, 40% {
+    transform: rotate(10deg);
+  }
+}
+
+.button-gradient {
+    background: blue;
+    background: linear-gradient(
+        120.39deg,
+        #1062b0 -11.49%,
+        #4fb5ff 50.21%,
+        #1062b0 106.97%,
+        #1062b0 106.97%
+    );
+    background-size: 400% 400% !important;
+    -webkit-animation: AnimationButton 3s ease-in-out infinite;
+    -moz-animation: AnimationButton 3s ease-in-out infinite;
+    animation: AnimationButton 3s ease-in-out infinite;
+}
+
+.button-border :hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button-gradient :hover {
+    background: #1062b0;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.button-gradient .active {
+    background: linear-gradient(
+        118.8deg,
+        #1062b0 -11.49%,
+        #3284d1 48.97%,
+        #1062b0 106.97%,
+        #1062b0 106.97%
+    );
+}
+
+@-webkit-keyframes AnimationButton {
+    0% {
+        background-position: 0% 51%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 51%;
+    }
+}
+
+@-moz-keyframes AnimationButton {
+    0% {
+        background-position: 0% 51%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 51%;
+    }
+}
+
+@keyframes AnimationButton {
+    0% {
+        background-position: 0% 51%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 51%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-custom {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.dash-line-animation {
+    animation: dash 5s linear infinite backwards;
+}
+
+@keyframes dashMoveVerticalLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-800px);
+    }
+}
+
+@keyframes dashMoveVerticalRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(400px);
+    }
+}
+
+@keyframes dashMoveHorizontalTop {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-500px);
+    }
+}
+@keyframes dashMoveHorizontalBottom {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(500px);
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: -200;
+    }
+}
+
+.default__menu {
+    width: 1170px;
+    bottom: 20%;
+}
+
+.default__img {
+    height: 157px;
+}
+
+.menu-desktop__link:hover {
+    background: #1062af;
+    color: white;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+    opacity: 0;
+  }

@@ -1,0 +1,119 @@
+.all-full {
+    @apply h-full w-full;
+}
+
+.absolute-l-t {
+    @apply absolute top-0 left-0;
+}
+
+.header-div {
+  @apply text-center text-white flex items-center justify-center h-120px text-15px px-5px
+}
+
+.input {
+  @apply bg-#F5FCFF max-w-500px w-full font-lato text-center py-8px px-10px text-15px mt-5px
+}
+
+.input-dark {
+  @apply bg-#262626 max-w-500px w-full font-lato text-center py-8px px-10px text-15px mt-5px
+}
+
+.input::placeholder {
+    @apply text-gray-CDCDCD font-light
+}
+
+.input-div {
+  @apply block mb-10px
+}
+
+.input-required {
+  @apply text-12px block text-accent-red pl-10px pt-10px
+}
+
+.button {
+  @apply font-raleway leading-none text-14px text-center text-white block font-normal border border-solid border-white rounded-5 w-full max-w-200px h-50px mx-auto
+}
+
+.btn {
+  @apply flex items-center justify-center text-center w-3/5 h-20
+}
+
+.page-title {
+  @apply leading-tight uppercase text-center text-white font-open-sans font-extrabold text-50px
+}
+
+.service__img--big {
+  @apply mx-auto bg-white w-150px h-150px flex items-center justify-center border border-dashed border-accent-gray relative rounded-5
+}
+
+.service__img--min {
+  @apply mx-auto bg-white w-80px h-60px flex items-center justify-center border border-dashed border-accent-gray relative rounded-2 mx-2px
+}
+
+.service-data-title {
+  @apply leading-tight text-18px font-bold font-raleway text-white mb-10px
+}
+
+.lawyer-advantages {
+    @apply bg-accent-blue rounded-5 mb-30px pt-35px pb-30px px-35px text-white text-14px text-center
+}
+
+.lawyer-num {
+  @apply bg-white w-40px h-40px flex items-center justify-center rounded-full text-accent-blue font-raleway font-bold text-22px absolute -top-21px
+}
+
+
+@screen md {
+  .page-title {
+    @apply text-55px
+  }
+
+  .button {
+    @apply text-15px max-w-210px h-50px
+  }
+
+  .service__img__min {
+    @apply w-100px h-84px
+  }
+
+  .lawyer-advantages {
+    @apply w-full flex justify-center items-center mb-20px
+  }
+}
+
+.handbag-obj {
+    @apply z-20 absolute
+}
+
+
+@screen lg {
+  .page-title {
+    @apply text-64px
+  }
+}
+
+@screen 2xl {
+  .input {
+    @apply max-w-550px py-12px px-15px text-18px
+  }
+
+  .input-dark {
+    @apply max-w-550px py-12px px-15px text-18px
+  }
+
+  .input-div {
+    @apply mb-20px
+  }
+
+  .header-div {
+    @apply h-150px text-18px px-15px
+  }
+
+  .button {
+    @apply text-16px max-w-245px h-60px
+  }
+
+  .service-data-title {
+    @apply text-24px font-black mb-15px
+  }
+}

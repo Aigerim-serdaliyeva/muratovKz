@@ -1,0 +1,30 @@
+/* Базовые стили */
+/* @import 'reset-css'; */
+
+@import 'tailwindcss/base';
+
+@import './custom-base';
+
+@import './fonts';
+
+/* Компоненты */
+
+@import 'tailwindcss/components';
+
+@import './custom-components';
+
+/* Утилиты */
+
+@import 'tailwindcss/utilities';
+
+@import './custom-utilities';
+
+/* Сторонние библиотеки */
+
+/* @import './tui-styles/codemirror';
+
+@import './tui-styles/github.min'; */
+
+/* @import 'tui-editor/dist/tui-editor.min.css';
+
+@import 'tui-editor/dist/tui-editor-contents.min.css'; */
